@@ -7,5 +7,7 @@
   "item.minecraft.lingering_potion.effect.potation": "Lingering Potion of Potation",
   "item.minecraft.splash_potion.effect.potation": "Splash Potion of Potation",
   "item.minecraft.tipped_arrow.effect.potation": "Arrow of Potation",
-  "gui.potatosmp.credits_own.label_empty": "Balance: "
+  "gui.potatosmp.credits_own.label_empty": "Balance: ",
+  "item.potatosmp.compressed_potato": "Compressed Potato",
+  "item.potatosmp.potato_bill": "Potato Bill"
 }

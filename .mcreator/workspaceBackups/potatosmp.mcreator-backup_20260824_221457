@@ -100,63 +100,6 @@
           "src/main/java/net/mcreator/potatosmp/command/PayCommand.java"
         ]
       }
-    },
-    {
-      "name": "CompressedPotato",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "compressed_potato",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/potatosmp/blockstates/compressed_potato.json",
-          "src/main/resources/assets/potatosmp/models/item/compressed_potato.json",
-          "src/main/resources/assets/potatosmp/models/block/compressed_potato.json",
-          "src/main/java/net/mcreator/potatosmp/block/CompressedPotatoBlock.java",
-          "src/main/resources/assets/potatosmp/items/compressed_potato.json",
-          "src/main/resources/data/potatosmp/loot_table/blocks/compressed_potato.json"
-        ]
-      }
-    },
-    {
-      "name": "CompressedPotatoRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "compressed_potato_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/potatosmp/advancement/recipes/compressed_potato_recipe.json",
-          "src/main/resources/data/potatosmp/recipe/compressed_potato_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "PotatoBill",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "potato_bill",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/potatosmp/items/potato_bill.json",
-          "src/main/java/net/mcreator/potatosmp/item/PotatoBillItem.java",
-          "src/main/resources/assets/potatosmp/models/item/potato_bill.json"
-        ]
-      }
-    },
-    {
-      "name": "PotatoBillRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "potato_bill_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/potatosmp/advancement/recipes/potato_bill_recipe.json",
-          "src/main/resources/data/potatosmp/recipe/potato_bill_recipe.json"
-        ]
-      }
     }
   ],
   "variable_elements": [
@@ -180,9 +123,7 @@
       "item.minecraft.lingering_potion.effect.potation": "Lingering Potion of Potation",
       "item.minecraft.splash_potion.effect.potation": "Splash Potion of Potation",
       "item.minecraft.tipped_arrow.effect.potation": "Arrow of Potation",
-      "gui.potatosmp.credits_own.label_empty": "Balance: ",
-      "item.potatosmp.compressed_potato": "Compressed Potato",
-      "item.potatosmp.potato_bill": "Potato Bill"
+      "gui.potatosmp.credits_own.label_empty": "Balance: "
     }
   },
   "metadata": {
@@ -191,10 +132,6 @@
       "src/main/java/net/mcreator/potatosmp/init/PotatosmpModOverlays.java",
       "src/main/java/net/mcreator/potatosmp/init/PotatosmpModPotions.java",
       "src/main/java/net/mcreator/potatosmp/init/PotatosmpModBrewingRecipes.java",
-      "src/main/java/net/mcreator/potatosmp/init/PotatosmpModBlocks.java",
-      "src/main/java/net/mcreator/potatosmp/init/PotatosmpModItems.java",
-      "src/main/java/net/mcreator/potatosmp/mixin/ServerPlayerMixin.java",
-      "src/main/java/net/mcreator/potatosmp/mixin/RepairItemRecipeMixin.java",
       "src/main/java/net/mcreator/potatosmp/PotatosmpModClient.java",
       "src/main/java/net/mcreator/potatosmp/mixin/PlayerMixin.java",
       "src/main/java/net/mcreator/potatosmp/event/MiscEvents.java",

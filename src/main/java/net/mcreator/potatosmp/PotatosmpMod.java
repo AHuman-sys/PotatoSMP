@@ -10,8 +10,10 @@ import net.minecraft.server.TickTask;
 
 import net.mcreator.potatosmp.network.PotatosmpModVariables;
 import net.mcreator.potatosmp.init.PotatosmpModPotions;
+import net.mcreator.potatosmp.init.PotatosmpModItems;
 import net.mcreator.potatosmp.init.PotatosmpModCommands;
 import net.mcreator.potatosmp.init.PotatosmpModBrewingRecipes;
+import net.mcreator.potatosmp.init.PotatosmpModBlocks;
 
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
@@ -40,6 +42,8 @@ public class PotatosmpMod implements ModInitializer {
 		// End of user code block mod constructor
 		LOGGER.info("Initializing PotatosmpMod");
 		PotatosmpModVariables.variablesLoad();
+		PotatosmpModBlocks.load();
+		PotatosmpModItems.load();
 		PotatosmpModBrewingRecipes.load();
 		PotatosmpModPotions.load();
 		PotatosmpModCommands.load();

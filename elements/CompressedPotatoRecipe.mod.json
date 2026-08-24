@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "Items.POTATO"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "Items.POTATO",
+      "Items.POTATO",
+      "Items.POTATO",
+      "Items.POTATO",
+      "Items.POTATO",
+      "Items.POTATO",
+      "Items.POTATO",
+      "Items.POTATO",
+      "Items.POTATO"
+    ],
+    "recipeReturnStack": "CUSTOM:CompressedPotato",
+    "name": "compressed_potato_recipe",
+    "namespace": "mod"
+  }
+}

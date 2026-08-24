@@ -130,33 +130,6 @@
           "src/main/resources/data/potatosmp/recipe/compressed_potato_recipe.json"
         ]
       }
-    },
-    {
-      "name": "PotatoBill",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "potato_bill",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/potatosmp/items/potato_bill.json",
-          "src/main/java/net/mcreator/potatosmp/item/PotatoBillItem.java",
-          "src/main/resources/assets/potatosmp/models/item/potato_bill.json"
-        ]
-      }
-    },
-    {
-      "name": "PotatoBillRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "potato_bill_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/potatosmp/advancement/recipes/potato_bill_recipe.json",
-          "src/main/resources/data/potatosmp/recipe/potato_bill_recipe.json"
-        ]
-      }
     }
   ],
   "variable_elements": [
@@ -181,8 +154,7 @@
       "item.minecraft.splash_potion.effect.potation": "Splash Potion of Potation",
       "item.minecraft.tipped_arrow.effect.potation": "Arrow of Potation",
       "gui.potatosmp.credits_own.label_empty": "Balance: ",
-      "item.potatosmp.compressed_potato": "Compressed Potato",
-      "item.potatosmp.potato_bill": "Potato Bill"
+      "item.potatosmp.compressed_potato": "Compressed Potato"
     }
   },
   "metadata": {

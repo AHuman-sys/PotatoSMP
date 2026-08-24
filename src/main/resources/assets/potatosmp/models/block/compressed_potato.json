@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "potatosmp:block/compressed_potato",
+    "up": "potatosmp:block/compressed_potato",
+    "north": "potatosmp:block/compressed_potato",
+    "east": "potatosmp:block/compressed_potato",
+    "south": "potatosmp:block/compressed_potato",
+    "west": "potatosmp:block/compressed_potato",
+    "particle": "potatosmp:block/compressed_potato"
+  }
+}

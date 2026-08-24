@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": "potatosmp:compressed_potato",
+    "b": "minecraft:baked_potato",
+    "c": "minecraft:paper"
+  },
+  "result": {
+    "id": "potatosmp:potato_bill",
+    "count": 1
+  }
+}

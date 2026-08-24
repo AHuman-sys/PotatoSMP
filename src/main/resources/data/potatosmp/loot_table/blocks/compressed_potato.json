@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "potatosmp:blocks/compressed_potato",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "potatosmp:compressed_potato"
+        }
+      ]
+    }
+  ]
+}
