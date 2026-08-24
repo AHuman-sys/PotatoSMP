@@ -1,0 +1,20 @@
+{
+  "_fv": 89,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potation",
+    "splashName": "Splash Potion of Potation",
+    "lingeringName": "Lingering Potion of Potation",
+    "arrowName": "Arrow of Potation",
+    "effects": [
+      {
+        "effect": "LUCK",
+        "duration": 3600,
+        "infinite": false,
+        "amplifier": 4,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

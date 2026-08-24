@@ -1,0 +1,11 @@
+{
+  "item.minecraft.potion.effect.vodka_potion": "Vodka",
+  "item.minecraft.tipped_arrow.effect.vodka_potion": "Vodka Arrow",
+  "item.minecraft.splash_potion.effect.vodka_potion": "Molotov Cocktail",
+  "item.minecraft.lingering_potion.effect.vodka_potion": "Not Molotov Cocktail",
+  "item.minecraft.potion.effect.potation": "Potation",
+  "item.minecraft.lingering_potion.effect.potation": "Lingering Potion of Potation",
+  "item.minecraft.splash_potion.effect.potation": "Splash Potion of Potation",
+  "item.minecraft.tipped_arrow.effect.potation": "Arrow of Potation",
+  "gui.potatosmp.credits_own.label_empty": "Balance: "
+}

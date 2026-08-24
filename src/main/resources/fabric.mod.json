@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "potatosmp",
+  "version": "1.0.0",
+  "name": "PotatoSMP",
+  "authors": [
+    "MCreator"
+  ],
+  "contact": {
+    "homepage": "https://mcreator.net",
+    "sources": ""
+  },
+  "license": "Not specified",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.mcreator.potatosmp.PotatosmpMod"
+    ],
+    "client": [
+      "net.mcreator.potatosmp.PotatosmpModClient"
+    ]
+  },
+  "mixins": [
+    "potatosmp.mixins.json"
+  ],
+  "accessWidener": "META-INF/potatosmp.classtweaker",
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.1.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
