@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "ba",
+    "b "
+  ],
+  "key": {
+    "a": "potatosmp:potato_ingot",
+    "b": "minecraft:stick"
+  },
+  "result": {
+    "id": "potatosmp:potato_axe",
+    "count": 1
+  }
+}

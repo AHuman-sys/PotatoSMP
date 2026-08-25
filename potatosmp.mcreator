@@ -80,6 +80,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
             "name": "entity",
             "type": "entity"
           }
@@ -207,6 +211,74 @@
           "src/main/java/net/mcreator/potatosmp/procedures/BankGUIProcedureProcedure.java"
         ]
       }
+    },
+    {
+      "name": "PotatoIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potato_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/potatosmp/item/PotatoIngotItem.java",
+          "src/main/resources/assets/potatosmp/items/potato_ingot.json",
+          "src/main/resources/assets/potatosmp/models/item/potato_ingot.json"
+        ]
+      }
+    },
+    {
+      "name": "PotatoSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potato_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/potatosmp/models/item/potato_sword.json",
+          "src/main/java/net/mcreator/potatosmp/item/PotatoSwordItem.java",
+          "src/main/resources/assets/potatosmp/items/potato_sword.json"
+        ]
+      }
+    },
+    {
+      "name": "PotatoAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potato_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/potatosmp/items/potato_axe.json",
+          "src/main/resources/assets/potatosmp/models/item/potato_axe.json",
+          "src/main/java/net/mcreator/potatosmp/item/PotatoAxeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "PotatoSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potato_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/potatosmp/recipe/potato_sword_recipe.json",
+          "src/main/resources/data/potatosmp/advancement/recipes/potato_sword_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PotatoAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potato_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/potatosmp/advancement/recipes/potato_axe_recipe.json",
+          "src/main/resources/data/potatosmp/recipe/potato_axe_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -218,7 +290,20 @@
     }
   ],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "ITEMS:minecraft:swords": [
+      "~PotatoSword@CUSTOM:PotatoSword"
+    ],
+    "ITEMS:potatosmp:potato_sword_repair_items": [
+      "~PotatoSword@CUSTOM:PotatoIngot"
+    ],
+    "ITEMS:potatosmp:potato_axe_repair_items": [
+      "~PotatoAxe@CUSTOM:PotatoIngot"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~PotatoAxe@CUSTOM:PotatoAxe"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
@@ -236,7 +321,10 @@
       "item.potatosmp.bank": "Bank",
       "gui.potatosmp.bank_gui.label_deposit_potato_bills_here": "Deposit potato bills here",
       "gui.potatosmp.bank_gui.label_empty1": "\u003c-",
-      "gui.potatosmp.bank_gui.label_empty": "-\u003e"
+      "gui.potatosmp.bank_gui.label_empty": "-\u003e",
+      "item.potatosmp.potato_ingot": "Potato Ingot",
+      "item.potatosmp.potato_sword": "Potato Sword",
+      "item.potatosmp.potato_axe": "Potato Axe"
     }
   },
   "metadata": {
@@ -254,6 +342,7 @@
       "src/main/java/net/mcreator/potatosmp/mixin/ServerPlayerMixin.java",
       "src/main/java/net/mcreator/potatosmp/mixin/RepairItemRecipeMixin.java",
       "src/main/java/net/mcreator/potatosmp/PotatosmpModClient.java",
+      "src/main/java/net/mcreator/potatosmp/init/PotatosmpModTabs.java",
       "src/main/java/net/mcreator/potatosmp/mixin/PlayerMixin.java",
       "src/main/java/net/mcreator/potatosmp/event/MiscEvents.java",
       "src/main/java/net/mcreator/potatosmp/PotatosmpMod.java",

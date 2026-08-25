@@ -85,7 +85,7 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
-    "soundOnStep": "GROUND",
+    "soundOnStep": "SPONGE",
     "isCustomSoundType": false,
     "breakSound": "",
     "fallSound": "",

@@ -11,5 +11,10 @@
   "item.potatosmp.compressed_potato": "Compressed Potato",
   "item.potatosmp.potato_bill": "Potato Bill",
   "item.potatosmp.bank": "Bank",
-  "gui.potatosmp.bank_gui.label_deposit_potato_bills_here": "Deposit potato bills here"
+  "gui.potatosmp.bank_gui.label_deposit_potato_bills_here": "Deposit potato bills here",
+  "gui.potatosmp.bank_gui.label_empty1": "<-",
+  "gui.potatosmp.bank_gui.label_empty": "->",
+  "item.potatosmp.potato_ingot": "Potato Ingot",
+  "item.potatosmp.potato_sword": "Potato Sword",
+  "item.potatosmp.potato_axe": "Potato Axe"
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "potatosmp:item/potato_sword"
+  }
+}

@@ -11,7 +11,10 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.Registries;
 
+import net.mcreator.potatosmp.item.PotatoSwordItem;
+import net.mcreator.potatosmp.item.PotatoIngotItem;
 import net.mcreator.potatosmp.item.PotatoBillItem;
+import net.mcreator.potatosmp.item.PotatoAxeItem;
 import net.mcreator.potatosmp.PotatosmpMod;
 
 import java.util.function.Function;
@@ -20,11 +23,17 @@ public class PotatosmpModItems {
 	public static Item COMPRESSED_POTATO;
 	public static Item POTATO_BILL;
 	public static Item BANK;
+	public static Item POTATO_INGOT;
+	public static Item POTATO_SWORD;
+	public static Item POTATO_AXE;
 
 	public static void load() {
 		COMPRESSED_POTATO = block(PotatosmpModBlocks.COMPRESSED_POTATO, "compressed_potato");
 		POTATO_BILL = register("potato_bill", PotatoBillItem::new);
 		BANK = block(PotatosmpModBlocks.BANK, "bank", new Item.Properties().stacksTo(1).fireResistant());
+		POTATO_INGOT = register("potato_ingot", PotatoIngotItem::new);
+		POTATO_SWORD = register("potato_sword", PotatoSwordItem::new);
+		POTATO_AXE = register("potato_axe", PotatoAxeItem::new);
 	}
 
 	// Start of user code block custom items

@@ -3,13 +3,14 @@
   "category": "misc",
   "pattern": [
     "aba",
-    "bcb",
+    "cdc",
     "aba"
   ],
   "key": {
     "a": "potatosmp:compressed_potato",
     "b": "minecraft:baked_potato",
-    "c": "minecraft:paper"
+    "c": "minecraft:poisonous_potato",
+    "d": "minecraft:paper"
   },
   "result": {
     "id": "potatosmp:potato_bill",

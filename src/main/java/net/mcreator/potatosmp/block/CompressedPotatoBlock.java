@@ -6,6 +6,6 @@ import net.minecraft.world.level.block.Block;
 
 public class CompressedPotatoBlock extends Block {
 	public CompressedPotatoBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.GRAVEL).strength(1f, 10f));
+		super(properties.sound(SoundType.SPONGE).strength(1f, 10f));
 	}
 }
