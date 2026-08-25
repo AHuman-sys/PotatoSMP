@@ -11,15 +11,18 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.potatosmp.block.CompressedPotatoBlock;
+import net.mcreator.potatosmp.block.BankBlock;
 import net.mcreator.potatosmp.PotatosmpMod;
 
 import java.util.function.Function;
 
 public class PotatosmpModBlocks {
 	public static Block COMPRESSED_POTATO;
+	public static Block BANK;
 
 	public static void load() {
 		COMPRESSED_POTATO = register("compressed_potato", CompressedPotatoBlock::new);
+		BANK = register("bank", BankBlock::new);
 	}
 
 	// Start of user code block custom blocks

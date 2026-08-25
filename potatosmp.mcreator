@@ -157,6 +157,56 @@
           "src/main/resources/data/potatosmp/recipe/potato_bill_recipe.json"
         ]
       }
+    },
+    {
+      "name": "Bank",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/potatosmp/block/BankBlock.java",
+          "src/main/resources/assets/potatosmp/models/item/bank.json",
+          "src/main/resources/assets/potatosmp/blockstates/bank.json",
+          "src/main/resources/data/potatosmp/loot_table/blocks/bank.json",
+          "src/main/resources/assets/potatosmp/items/bank.json",
+          "src/main/java/net/mcreator/potatosmp/block/entity/BankBlockEntity.java",
+          "src/main/resources/assets/potatosmp/models/block/bank.json"
+        ]
+      }
+    },
+    {
+      "name": "BankGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bank_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/potatosmp/client/gui/BankGUIScreen.java",
+          "src/main/java/net/mcreator/potatosmp/network/BankGUISlotMessage.java",
+          "src/main/java/net/mcreator/potatosmp/world/inventory/BankGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "BankGUIProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bank_gui_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/potatosmp/procedures/BankGUIProcedureProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -182,16 +232,24 @@
       "item.minecraft.tipped_arrow.effect.potation": "Arrow of Potation",
       "gui.potatosmp.credits_own.label_empty": "Balance: ",
       "item.potatosmp.compressed_potato": "Compressed Potato",
-      "item.potatosmp.potato_bill": "Potato Bill"
+      "item.potatosmp.potato_bill": "Potato Bill",
+      "item.potatosmp.bank": "Bank",
+      "gui.potatosmp.bank_gui.label_deposit_potato_bills_here": "Deposit potato bills here",
+      "gui.potatosmp.bank_gui.label_empty1": "\u003c-",
+      "gui.potatosmp.bank_gui.label_empty": "-\u003e"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/potatosmp/init/PotatosmpModCommands.java",
+      "src/main/java/net/mcreator/potatosmp/init/PotatosmpModScreens.java",
+      "src/main/java/net/mcreator/potatosmp/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/potatosmp/init/PotatosmpModMenus.java",
       "src/main/java/net/mcreator/potatosmp/init/PotatosmpModOverlays.java",
       "src/main/java/net/mcreator/potatosmp/init/PotatosmpModPotions.java",
       "src/main/java/net/mcreator/potatosmp/init/PotatosmpModBrewingRecipes.java",
       "src/main/java/net/mcreator/potatosmp/init/PotatosmpModBlocks.java",
+      "src/main/java/net/mcreator/potatosmp/init/PotatosmpModBlockEntities.java",
       "src/main/java/net/mcreator/potatosmp/init/PotatosmpModItems.java",
       "src/main/java/net/mcreator/potatosmp/mixin/ServerPlayerMixin.java",
       "src/main/java/net/mcreator/potatosmp/mixin/RepairItemRecipeMixin.java",

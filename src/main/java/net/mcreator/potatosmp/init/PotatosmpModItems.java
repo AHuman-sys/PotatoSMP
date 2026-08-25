@@ -19,10 +19,12 @@ import java.util.function.Function;
 public class PotatosmpModItems {
 	public static Item COMPRESSED_POTATO;
 	public static Item POTATO_BILL;
+	public static Item BANK;
 
 	public static void load() {
 		COMPRESSED_POTATO = block(PotatosmpModBlocks.COMPRESSED_POTATO, "compressed_potato");
 		POTATO_BILL = register("potato_bill", PotatoBillItem::new);
+		BANK = block(PotatosmpModBlocks.BANK, "bank", new Item.Properties().stacksTo(1).fireResistant());
 	}
 
 	// Start of user code block custom items

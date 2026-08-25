@@ -4,12 +4,23 @@
   "workspacePanelSortAscending": true,
   "projectBrowserState": {
     "expandedPaths": [
-      "[, PotatoSMP]"
+      "[, PotatoSMP]",
+      "[, PotatoSMP, Source (Gradle)]",
+      "[, PotatoSMP, Source (Gradle), /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net]",
+      "[, PotatoSMP, Source (Gradle), /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator]",
+      "[, PotatoSMP, Source (Gradle), /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator/potatosmp]",
+      "[, PotatoSMP, Source (Gradle), /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator/potatosmp, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator/potatosmp/client]",
+      "[, PotatoSMP, Source (Gradle), /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator/potatosmp, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator/potatosmp/client, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator/potatosmp/client/screens]",
+      "[, PotatoSMP, Source (Gradle), /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator/potatosmp, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator/potatosmp/event]",
+      "[, PotatoSMP, Source (Gradle), /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator/potatosmp, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator/potatosmp/init]",
+      "[, PotatoSMP, Source (Gradle), /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator/potatosmp, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator/potatosmp/mixin]",
+      "[, PotatoSMP, Source (Gradle), /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator/potatosmp, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator/potatosmp/network]",
+      "[, PotatoSMP, Source (Gradle), /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator/potatosmp, /home/potato/MCreatorWorkspaces/potatosmp/src/main/java/net/mcreator/potatosmp/procedures]"
     ]
   },
   "leftDockState": {
     "dockSizes": {
-      "project_browser": 280,
+      "project_browser": 339,
       "local_history": 280
     }
   },

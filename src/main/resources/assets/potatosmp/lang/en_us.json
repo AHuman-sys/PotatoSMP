@@ -9,5 +9,7 @@
   "item.minecraft.tipped_arrow.effect.potation": "Arrow of Potation",
   "gui.potatosmp.credits_own.label_empty": "Balance: ",
   "item.potatosmp.compressed_potato": "Compressed Potato",
-  "item.potatosmp.potato_bill": "Potato Bill"
+  "item.potatosmp.potato_bill": "Potato Bill",
+  "item.potatosmp.bank": "Bank",
+  "gui.potatosmp.bank_gui.label_deposit_potato_bills_here": "Deposit potato bills here"
 }

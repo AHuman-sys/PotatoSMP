@@ -6,6 +6,9 @@ classTweaker v1 official
 
 
 
+accessible method net/minecraft/client/gui/components/AbstractSliderButton getSprite ()Lnet/minecraft/resources/Identifier;
+accessible method net/minecraft/client/gui/components/AbstractSliderButton getHandleSprite ()Lnet/minecraft/resources/Identifier;
+accessible field net/minecraft/client/gui/components/AbstractSliderButton dragging Z
 
 
 
