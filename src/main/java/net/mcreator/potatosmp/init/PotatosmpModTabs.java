@@ -14,6 +14,7 @@ public class PotatosmpModTabs {
 		});
 		CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(tabData -> {
 			tabData.accept(PotatosmpModItems.POTATO_AXE);
+			tabData.accept(PotatosmpModItems.POISONOUS_POTATO_SWORD);
 		});
 	}
 }

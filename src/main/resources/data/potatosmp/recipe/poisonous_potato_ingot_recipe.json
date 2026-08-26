@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "potato",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "minecraft:poisonous_potato",
+    "b": "potatosmp:potato_ingot"
+  },
+  "result": {
+    "id": "potatosmp:poisonous_potato_ingot",
+    "count": 1
+  }
+}

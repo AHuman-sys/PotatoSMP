@@ -1,0 +1,11 @@
+{
+  "never_gonna_give_you_up": {
+    "subtitle": "subtitles.never_gonna_give_you_up",
+    "sounds": [
+      {
+        "name": "potatosmp:rick_astley_never_gonna_give_you_up",
+        "stream": true
+      }
+    ]
+  }
+}

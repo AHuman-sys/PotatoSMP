@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "potato",
+    "unlockingItems": [
+      "Items.POISONOUS_POTATO"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "Items.POISONOUS_POTATO",
+      "Items.POISONOUS_POTATO",
+      "Items.POISONOUS_POTATO",
+      "Items.POISONOUS_POTATO",
+      "CUSTOM:PotatoIngot",
+      "Items.POISONOUS_POTATO",
+      "Items.POISONOUS_POTATO",
+      "Items.POISONOUS_POTATO",
+      "Items.POISONOUS_POTATO"
+    ],
+    "recipeReturnStack": "CUSTOM:PoisonousPotatoIngot",
+    "name": "poisonous_potato_ingot_recipe",
+    "namespace": "mod"
+  }
+}

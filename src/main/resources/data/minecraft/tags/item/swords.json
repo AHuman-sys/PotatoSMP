@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "potatosmp:poisonous_potato_sword",
     "potatosmp:potato_sword"
   ]
 }

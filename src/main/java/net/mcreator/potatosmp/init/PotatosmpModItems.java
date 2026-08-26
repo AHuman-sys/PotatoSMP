@@ -11,10 +11,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.Registries;
 
-import net.mcreator.potatosmp.item.PotatoSwordItem;
-import net.mcreator.potatosmp.item.PotatoIngotItem;
-import net.mcreator.potatosmp.item.PotatoBillItem;
-import net.mcreator.potatosmp.item.PotatoAxeItem;
+import net.mcreator.potatosmp.item.*;
 import net.mcreator.potatosmp.PotatosmpMod;
 
 import java.util.function.Function;
@@ -26,6 +23,9 @@ public class PotatosmpModItems {
 	public static Item POTATO_INGOT;
 	public static Item POTATO_SWORD;
 	public static Item POTATO_AXE;
+	public static Item POISONOUS_POTATO_INGOT;
+	public static Item POISONOUS_POTATO_SWORD;
+	public static Item NGGUP_DISC;
 
 	public static void load() {
 		COMPRESSED_POTATO = block(PotatosmpModBlocks.COMPRESSED_POTATO, "compressed_potato");
@@ -34,6 +34,9 @@ public class PotatosmpModItems {
 		POTATO_INGOT = register("potato_ingot", PotatoIngotItem::new);
 		POTATO_SWORD = register("potato_sword", PotatoSwordItem::new);
 		POTATO_AXE = register("potato_axe", PotatoAxeItem::new);
+		POISONOUS_POTATO_INGOT = register("poisonous_potato_ingot", PoisonousPotatoIngotItem::new);
+		POISONOUS_POTATO_SWORD = register("poisonous_potato_sword", PoisonousPotatoSwordItem::new);
+		NGGUP_DISC = register("nggup_disc", NGGUPDiscItem::new);
 	}
 
 	// Start of user code block custom items

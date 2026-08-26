@@ -1,0 +1,21 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "potato",
+    "unlockingItems": [
+      "CUSTOM:CompressedPotato"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": "CUSTOM:CompressedPotato",
+    "smeltingReturnStack": "CUSTOM:PotatoIngot",
+    "name": "potato_ingot_recipe",
+    "namespace": "mod"
+  }
+}

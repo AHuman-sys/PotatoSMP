@@ -37,6 +37,7 @@ public class PotatosmpMod implements ModInitializer {
 		// Start of user code block mod constructor
 		// End of user code block mod constructor
 		LOGGER.info("Initializing PotatosmpMod");
+		PotatosmpModSounds.load();
 		PotatosmpModTabs.load();
 		PotatosmpModVariables.variablesLoad();
 		PotatosmpModBlocks.load();
