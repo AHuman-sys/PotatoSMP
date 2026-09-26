@@ -366,6 +366,36 @@
           "src/main/java/net/mcreator/potatosmp/item/NGGUPDiscItem.java"
         ]
       }
+    },
+    {
+      "name": "PotatoArrowProjectileHitsPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potato_arrow_projectile_hits_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/potatosmp/procedures/PotatoArrowProjectileHitsPlayerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PotatoArrow",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potato_arrow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/potatosmp/entity/PotatoArrowEntity.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -446,6 +476,8 @@
       "src/main/java/net/mcreator/potatosmp/init/PotatosmpModItems.java",
       "src/main/java/net/mcreator/potatosmp/mixin/ServerPlayerMixin.java",
       "src/main/java/net/mcreator/potatosmp/mixin/RepairItemRecipeMixin.java",
+      "src/main/java/net/mcreator/potatosmp/init/PotatosmpModEntities.java",
+      "src/main/java/net/mcreator/potatosmp/init/PotatosmpModEntityRenderers.java",
       "src/main/java/net/mcreator/potatosmp/PotatosmpModClient.java",
       "src/main/java/net/mcreator/potatosmp/init/PotatosmpModTabs.java",
       "src/main/java/net/mcreator/potatosmp/mixin/PlayerMixin.java",

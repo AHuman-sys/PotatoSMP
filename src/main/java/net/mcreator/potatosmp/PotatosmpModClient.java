@@ -4,6 +4,7 @@ import net.mcreator.potatosmp.network.PotatosmpModVariables;
 import net.mcreator.potatosmp.init.PotatosmpModScreens;
 import net.mcreator.potatosmp.init.PotatosmpModOverlays;
 import net.mcreator.potatosmp.init.PotatosmpModMenus;
+import net.mcreator.potatosmp.init.PotatosmpModEntityRenderers;
 
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.api.Environment;
@@ -16,6 +17,7 @@ public class PotatosmpModClient implements ClientModInitializer {
 	public void onInitializeClient() {
 		// Start of user code block mod constructor
 		// End of user code block mod constructor
+		PotatosmpModEntityRenderers.clientLoad();
 		PotatosmpModScreens.clientLoad();
 		PotatosmpModMenus.clientLoad();
 		PotatosmpModOverlays.clientLoad();

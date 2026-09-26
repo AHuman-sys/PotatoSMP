@@ -40,6 +40,7 @@ public class PotatosmpMod implements ModInitializer {
 		PotatosmpModSounds.load();
 		PotatosmpModTabs.load();
 		PotatosmpModVariables.variablesLoad();
+		PotatosmpModEntities.load();
 		PotatosmpModBlocks.load();
 		PotatosmpModBlockEntities.load();
 		PotatosmpModItems.load();

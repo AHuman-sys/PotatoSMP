@@ -19,5 +19,7 @@
   "item.potatosmp.potato_axe": "Potato Axe",
   "item.potatosmp.poisonous_potato_ingot": "Poisonous Potato Ingot",
   "item.potatosmp.poisonous_potato_sword": "Poisonous Potato Sword",
-  "subtitles.never_gonna_give_you_up": "cool song"
+  "subtitles.never_gonna_give_you_up": "cool song",
+  "item.potatosmp.nggup_disc": "NGGUP Disc",
+  "item.potatosmp.nggup_disc.desc": "cool song"
 }

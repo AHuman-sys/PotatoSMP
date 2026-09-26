@@ -80,6 +80,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
             "name": "entity",
             "type": "entity"
           }
@@ -275,6 +279,123 @@
           "src/main/resources/data/potatosmp/recipe/potato_axe_recipe.json"
         ]
       }
+    },
+    {
+      "name": "PoisonousPotatoIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poisonous_potato_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/potatosmp/models/item/poisonous_potato_ingot.json",
+          "src/main/java/net/mcreator/potatosmp/item/PoisonousPotatoIngotItem.java",
+          "src/main/resources/assets/potatosmp/items/poisonous_potato_ingot.json"
+        ]
+      }
+    },
+    {
+      "name": "PoisonousPotatoIngotRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poisonous_potato_ingot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/potatosmp/recipe/poisonous_potato_ingot_recipe.json",
+          "src/main/resources/data/potatosmp/advancement/recipes/poisonous_potato_ingot_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PotatoIngotRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potato_ingot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/potatosmp/recipe/potato_ingot_recipe.json",
+          "src/main/resources/data/potatosmp/advancement/recipes/potato_ingot_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PoisonousPotatoSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poisonous_potato_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/potatosmp/models/item/poisonous_potato_sword.json",
+          "src/main/java/net/mcreator/potatosmp/item/PoisonousPotatoSwordItem.java",
+          "src/main/resources/assets/potatosmp/items/poisonous_potato_sword.json"
+        ]
+      }
+    },
+    {
+      "name": "PoisonousPotatoSwordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poisonous_potato_sword_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/potatosmp/procedures/PoisonousPotatoSwordLivingEntityIsHitWithToolProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "NGGUPDisc",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nggup_disc",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/potatosmp/models/item/nggup_disc.json",
+          "src/main/resources/assets/potatosmp/items/nggup_disc.json",
+          "src/main/resources/data/potatosmp/jukebox_song/nggup_disc.json",
+          "src/main/java/net/mcreator/potatosmp/item/NGGUPDiscItem.java"
+        ]
+      }
+    },
+    {
+      "name": "PotatoArrowProjectileHitsPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potato_arrow_projectile_hits_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/potatosmp/procedures/PotatoArrowProjectileHitsPlayerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PotatoArrow",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potato_arrow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/potatosmp/entity/PotatoArrowEntity.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -285,11 +406,17 @@
       "value": "0"
     }
   ],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "never_gonna_give_you_up",
+      "files": [
+        "rick_astley_never_gonna_give_you_up"
+      ],
+      "category": "music",
+      "subtitle": "cool song"
+    }
+  ],
   "tag_elements": {
-    "ITEMS:minecraft:swords": [
-      "~PotatoSword@CUSTOM:PotatoSword"
-    ],
     "ITEMS:potatosmp:potato_sword_repair_items": [
       "~PotatoSword@CUSTOM:PotatoIngot"
     ],
@@ -298,6 +425,13 @@
     ],
     "ITEMS:minecraft:axes": [
       "~PotatoAxe@CUSTOM:PotatoAxe"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~PoisonousPotatoSword@CUSTOM:PoisonousPotatoSword",
+      "~PotatoSword@CUSTOM:PotatoSword"
+    ],
+    "ITEMS:minecraft:music_discs": [
+      "~NGGUPDisc@CUSTOM:NGGUPDisc"
     ]
   },
   "tab_element_order": {},
@@ -320,7 +454,12 @@
       "gui.potatosmp.bank_gui.label_empty": "-\u003e",
       "item.potatosmp.potato_ingot": "Potato Ingot",
       "item.potatosmp.potato_sword": "Potato Sword",
-      "item.potatosmp.potato_axe": "Potato Axe"
+      "item.potatosmp.potato_axe": "Potato Axe",
+      "item.potatosmp.poisonous_potato_ingot": "Poisonous Potato Ingot",
+      "item.potatosmp.poisonous_potato_sword": "Poisonous Potato Sword",
+      "subtitles.never_gonna_give_you_up": "cool song",
+      "item.potatosmp.nggup_disc": "NGGUP Disc",
+      "item.potatosmp.nggup_disc.desc": "cool song"
     }
   },
   "metadata": {
@@ -337,17 +476,21 @@
       "src/main/java/net/mcreator/potatosmp/init/PotatosmpModItems.java",
       "src/main/java/net/mcreator/potatosmp/mixin/ServerPlayerMixin.java",
       "src/main/java/net/mcreator/potatosmp/mixin/RepairItemRecipeMixin.java",
+      "src/main/java/net/mcreator/potatosmp/init/PotatosmpModEntities.java",
+      "src/main/java/net/mcreator/potatosmp/init/PotatosmpModEntityRenderers.java",
       "src/main/java/net/mcreator/potatosmp/PotatosmpModClient.java",
       "src/main/java/net/mcreator/potatosmp/init/PotatosmpModTabs.java",
       "src/main/java/net/mcreator/potatosmp/mixin/PlayerMixin.java",
       "src/main/java/net/mcreator/potatosmp/event/MiscEvents.java",
       "src/main/java/net/mcreator/potatosmp/PotatosmpMod.java",
+      "src/main/resources/assets/potatosmp/sounds.json",
       "src/main/java/net/mcreator/potatosmp/mixin/ExperienceOrbMixin.java",
       "src/main/resources/fabric.mod.json",
       "src/main/java/net/mcreator/potatosmp/mixin/BoneMealItemMixin.java",
       "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/potatosmp.classtweaker",
       "src/main/java/net/mcreator/potatosmp/mixin/CommandsMixin.java",
+      "src/main/java/net/mcreator/potatosmp/init/PotatosmpModSounds.java",
       "src/main/java/net/mcreator/potatosmp/mixin/BlockItemMixin.java",
       "src/main/java/net/mcreator/potatosmp/event/LivingEntityEvents.java",
       "src/main/java/net/mcreator/potatosmp/event/BlockEvents.java",
