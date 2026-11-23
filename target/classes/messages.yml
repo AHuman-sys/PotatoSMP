@@ -1,0 +1,63 @@
+# ==============================================================================
+# PotatoSMP - Messages (Adventure MiniMessage)
+# Color Scheme: Gold (#F5B82E), Yellow (#FFE066), Brown (#A8733E), Green (#55CC55)
+# ==============================================================================
+
+prefix: "<gold><bold>[</bold><yellow>PotatoSMP</yellow><bold>]</bold></gold> "
+
+general:
+  player-only: "<red>Only players can use this command.</red>"
+  no-permission: "<red>You do not have permission to perform that action.</red>"
+  player-not-found: "<red>Player <yellow>{player}</yellow> could not be found.</red>"
+  feature-disabled: "<red>That PotatoSMP feature is currently disabled by an administrator.</red>"
+  reloaded: "<green>PotatoSMP configuration, shop prices, and messages reloaded!</green>"
+  invalid-amount: "<red>Please enter a valid positive amount.</red>"
+
+economy:
+  balance: "<gold>Balance:</gold> <yellow>{credits} Credits</yellow> <gray>|</gray> <green>Lifetime Deposited:</green> <yellow>{potatoes} Potatoes</yellow>"
+  balance-other: "<gold>{player}'s Balance:</gold> <yellow>{credits} Credits</yellow> <gray>|</gray> <green>Deposited:</green> <yellow>{potatoes} Potatoes</yellow>"
+  deposit-success: "<green>Deposited <yellow>{potatoes}</yellow> potatoes for <gold>+{credits} Credits</gold>! New balance: <yellow>{balance} Credits</yellow>.</green>"
+  deposit-empty: "<red>You do not have any eligible potatoes in your inventory to deposit.</red>"
+  market-shift: "<gold>Potato Market Update:</gold> <yellow>1 Potato</yellow> is now worth <green>{rate} Credits</green> ({trend})!"
+  bank-too-far: "<yellow>Visit <gold>Potato Bill</gold> at spawn (<green>{coords}</green>) to deposit your potatoes!</yellow>"
+
+shop:
+  purchased: "<green>Purchased <yellow>{item}</yellow> for <gold>{price} Credits</gold>!</green>"
+  insufficient-credits: "<red>You need <gold>{price} Credits</gold> to buy <yellow>{item}</yellow> (you have <yellow>{balance}</yellow>).</red>"
+  inventory-full: "<red>Your inventory is full! Clear a slot before completing this purchase.</red>"
+
+items:
+  heart-used: "<green>Consumed a <gold>Potato Heart</gold>! Max health increased (<yellow>{used}/{max}</yellow>).</green>"
+  heart-maxed: "<red>You have already reached the maximum of <yellow>{max}</yellow> Potato Hearts!</red>"
+  spud-seeker-equipped: "<green>The Spud Seeker active! <yellow>Scanning players within {radius} blocks on your Locator Bar.</yellow></green>"
+  spud-seeker-unequipped: "<gray>The Spud Seeker removed. Player Locator Bar deactivated.</gray>"
+  integrity-blocked: "<red>PotatoSMP relic traits cannot be altered or stripped in this station!</red>"
+
+bounty:
+  placed: "<gold>Bounty Alert!</gold> <yellow>{placer}</yellow> placed <green>{amount} Credits</green> on <red>{target}</red> (Total: <gold>{total} Credits</gold>)!"
+  target-notified: "<red><bold>WATCH OUT!</bold></red> <yellow>{placer}</yellow> placed a <gold>{amount} Credit</gold> bounty on your head!"
+  claimed: "<gold>BOUNTY CLAIMED!</gold> <green>{killer}</green> hunted down <red>{victim}</red> for <yellow>{amount} Credits</yellow>!"
+  self-bounty: "<red>You cannot place a bounty on yourself.</red>"
+  anti-farm-blocked: "<yellow>No bounty payout: anti-farming cooldown is active between <red>{killer}</red> and <red>{victim}</red>.</yellow>"
+  contributor-blocked: "<yellow>No bounty payout: bounty contributors cannot claim their own funded bounty.</yellow>"
+  expired-refund: "<gold>Bounty Expired:</gold> <yellow>{amount} Credits</yellow> refunded from expired bounty on <yellow>{target}</yellow>."
+
+netherite:
+  craft-blocked: "<red>Netherite is banned on PotatoSMP! <yellow>Forge Potato Equipment in /shop instead.</yellow></red>"
+  use-blocked: "<red>Netherite equipment is disabled on PotatoSMP! <yellow>Upgrade to Potato Armor & Tools via /shop.</yellow></red>"
+  converted: "<yellow>Netherite restriction converted your item to Diamond tier.</yellow>"
+  confiscated: "<red>Netherite items are confiscated on PotatoSMP!</red>"
+
+trade:
+  sent: "<green>Sent a trade request to <yellow>{target}</yellow>. Expires in {seconds}s.</green>"
+  received: "<gold>{sender}</gold> <yellow>wants to trade with you! Type <green>/trade accept {sender}</green> or <red>/trade decline {sender}</red>.</yellow>"
+  declined: "<red>Trade request declined.</red>"
+  cancelled: "<yellow>Trade cancelled. All items and credits returned safely.</yellow>"
+  completed: "<green>Trade completed securely with <yellow>{partner}</yellow>!</green>"
+  partner-no-space: "<red>Trade aborted: one player does not have enough inventory space.</red>"
+
+monument:
+  milestone-unlocked: "<gold><bold>COMMUNITY MONUMENT MILESTONE!</bold></gold> <yellow>{title}</yellow> reached at <green>{potatoes} Potatoes</green>! Online players received <gold>+{credits} Credits</gold> & Haste!"
+
+competition:
+  winner-broadcast: "<gold><bold>WEEKLY POTATO CHAMPION!</bold></gold> <yellow>{player}</yellow> topped the harvest with <green>{potatoes} Potatoes</green> and won <gold>{credits} Credits</gold>!"

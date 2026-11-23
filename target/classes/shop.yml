@@ -1,0 +1,88 @@
+# ==============================================================================
+# PotatoSMP - Shop Configuration
+# All prices are in digital Credits and editable without recompiling.
+# ==============================================================================
+
+categories:
+  armor:
+    title: "<gold><bold>Potato Armor</bold></gold>"
+    icon: "GOLDEN_CHESTPLATE"
+    slot: 11
+    description:
+      - "<gray>Diamond-grade protection forged</gray>"
+      - "<gray>from compressed tuber alloys.</gray>"
+      - ""
+      - "<green>Full Set Bonus:</green> <yellow>Permanent Speed I</yellow>"
+  weapons_tools:
+    title: "<gold><bold>Potato Tools & Weapons</bold></gold>"
+    icon: "GOLDEN_SWORD"
+    slot: 13
+    description:
+      - "<gray>Specialized combat & harvest</gray>"
+      - "<gray>relics crafted for SMP supremacy.</gray>"
+  upgrades:
+    title: "<gold><bold>Upgrades & Relics</bold></gold>"
+    icon: "APPLE"
+    slot: 15
+    description:
+      - "<gray>Permanent vitality upgrades and</gray>"
+      - "<gray>bounty-hunting headgear.</gray>"
+
+items:
+  POTATO_HELMET:
+    category: "armor"
+    slot: 10
+    price: 8500
+    enabled: true
+  POTATO_CHESTPLATE:
+    category: "armor"
+    slot: 12
+    price: 14000
+    enabled: true
+  POTATO_LEGGINGS:
+    category: "armor"
+    slot: 14
+    price: 12000
+    enabled: true
+  POTATO_BOOTS:
+    category: "armor"
+    slot: 16
+    price: 8000
+    enabled: true
+
+  POTATO_SWORD:
+    category: "weapons_tools"
+    slot: 10
+    price: 4500
+    enabled: true
+  POTATO_AXE:
+    category: "weapons_tools"
+    slot: 12
+    price: 9500
+    enabled: true
+  POTATO_PICKAXE:
+    category: "weapons_tools"
+    slot: 14
+    price: 11000
+    enabled: true
+  POTATO_HOE:
+    category: "weapons_tools"
+    slot: 16
+    price: 10000
+    enabled: true
+
+  POTATO_HEART:
+    category: "upgrades"
+    slot: 11
+    price: 12500
+    enabled: true
+  SPUD_SEEKER:
+    category: "upgrades"
+    slot: 13
+    price: 7500
+    enabled: true
+  GOLDEN_BAKED_POTATO:
+    category: "upgrades"
+    slot: 15
+    price: 600
+    enabled: true

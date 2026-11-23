@@ -1,0 +1,92 @@
+name: PotatoSMP
+version: '1.0.0'
+main: com.potatosmp.PotatoSMPPlugin
+api-version: '1.21'
+description: Complete potato-based SMP economy, custom equipment, bounty, trading, and progression plugin.
+author: PotatoSMP
+website: https://potatosmp.example.com
+
+commands:
+  shop:
+    description: Open the Potato Shop GUI.
+    usage: /shop [category]
+    permission: potatosmp.shop
+    aliases: [potatoshop, pshop]
+  bounty:
+    description: Open the PotatoSMP Bounty system GUI or manage bounties.
+    usage: /bounty [place <player> <amount> | list]
+    permission: potatosmp.bounty
+    aliases: [bounties, pbounty]
+  bank:
+    description: Open the Potato Bank interface.
+    usage: /bank
+    permission: potatosmp.bank
+    aliases: [potatobank, pbank]
+  potatobalance:
+    description: Display your credit balance and lifetime potato stats.
+    usage: /potatobalance [player]
+    permission: potatosmp.balance
+    aliases: [pbal, pbalance, credits]
+  potatotop:
+    description: View PotatoSMP economy and bounty leaderboards.
+    usage: /potatotop [potatoes|credits|claims|earnings]
+    permission: potatosmp.top
+    aliases: [ptop, potatoleaderboard]
+  trade:
+    description: Securely trade items and credits with another player.
+    usage: /trade <player|accept|decline>
+    permission: potatosmp.trade
+    aliases: [potatotrade, ptrade]
+  potatoscoreboard:
+    description: Toggle the PotatoSMP sidebar scoreboard.
+    usage: /potatoscoreboard
+    permission: potatosmp.scoreboard
+    aliases: [psb]
+  potatoadmin:
+    description: Administrative controls for PotatoSMP.
+    usage: /potatoadmin <give|credits|reload|setbank|setbills|reset|monument|competition>
+    permission: potatosmp.admin
+    aliases: [padmin]
+
+permissions:
+  potatosmp.player:
+    description: Grants all standard player permissions for PotatoSMP.
+    default: true
+    children:
+      potatosmp.shop: true
+      potatosmp.bounty: true
+      potatosmp.bank: true
+      potatosmp.balance: true
+      potatosmp.top: true
+      potatosmp.trade: true
+      potatosmp.scoreboard: true
+  potatosmp.shop:
+    description: Allows opening and buying from /shop.
+    default: true
+  potatosmp.bounty:
+    description: Allows using /bounty.
+    default: true
+  potatosmp.bank:
+    description: Allows using /bank and Potato Bill NPC.
+    default: true
+  potatosmp.balance:
+    description: Allows checking /potatobalance.
+    default: true
+  potatosmp.balance.others:
+    description: Allows checking another player's potato balance.
+    default: op
+  potatosmp.top:
+    description: Allows viewing /potatotop leaderboards.
+    default: true
+  potatosmp.trade:
+    description: Allows using /trade.
+    default: true
+  potatosmp.scoreboard:
+    description: Allows toggling the PotatoSMP scoreboard.
+    default: true
+  potatosmp.bypass.netherite:
+    description: Allows bypassing Netherite equipment restrictions.
+    default: false
+  potatosmp.admin:
+    description: Full administrative access to PotatoSMP.
+    default: op

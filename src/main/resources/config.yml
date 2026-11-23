@@ -1,0 +1,169 @@
+# ==============================================================================
+# PotatoSMP - Main Configuration
+# Target: PaperMC 1.21.8 (Java 21)
+# ==============================================================================
+
+features:
+  bank-remote-command: true          # Allow /bank from anywhere; false requires visiting Potato Bill at spawn
+  market-fluctuation: true           # Gently fluctuate potato exchange rates over time
+  golden-potatoes: true              # Enable rare Golden Potato drops, higher bank payout, and special recipes
+  bounties: true                     # Enable /bounty PvP bounty system
+  netherite-ban: true                # Enforce Netherite crafting, smithing, and equipment restrictions
+  weekly-competition: true           # Enable weekly potato deposit tournament
+  community-monument: true           # Enable spawn Community Potato Monument milestones & hologram
+  player-trading: true               # Enable /trade secure item + credit trading
+  scoreboard: true                   # Enable toggleable PotatoSMP sidebar scoreboard
+  locator-bar-spud-seeker: true      # Manage 1.21.8 native Locator Bar for The Spud Seeker hat
+
+economy:
+  currency-name: "Credits"
+  currency-symbol: "⛁"
+  starting-credits: 0
+  # Base credit value of 1 raw Potato
+  potato-base-rate: 2.0
+  # Base credit value of 1 Golden Potato (if golden-potatoes enabled)
+  golden-potato-rate: 120.0
+  # Only raw potatoes and Golden Potatoes can be deposited at Potato Bill
+  allow-poisonous-potato-deposit: false
+  poisonous-potato-rate: 0.5
+  market:
+    # Fluctuation interval in minutes
+    update-interval-minutes: 30
+    # Multiplier bounds around base rate (e.g. 0.85 = -15%, 1.20 = +20%)
+    min-multiplier: 0.85
+    max-multiplier: 1.20
+    max-step-change: 0.08
+
+bank:
+  # World & coordinates for Potato Bill NPC and Bank landmark (set via /potatoadmin setbills & /potatoadmin setbank)
+  npc:
+    name: "<gold><bold>Potato Bill</bold></gold> <yellow>[Banker]</yellow>"
+    world: "world"
+    x: 0.5
+    y: 64.0
+    z: 0.5
+    yaw: 0.0
+    pitch: 0.0
+    spawned: false
+  bank-location:
+    world: "world"
+    x: 0.5
+    y: 64.0
+    z: 0.5
+    yaw: 0.0
+    pitch: 0.0
+    configured: false
+
+items:
+  # Potato Armor Set full-set bonus
+  armor:
+    full-set-speed-amplifier: 0      # 0 = Speed I, 1 = Speed II
+    color-rgb: "#E6B83A"             # Golden-spud leather armor tint
+  sword:
+    attack-damage: 7.0               # Competitive diamond-tier sword damage
+    attack-speed: -1.8               # Vanilla sword is -2.4; -1.8 yields noticeably faster combo cooldown
+    held-speed-amplifier: 0          # Speed I while held
+  axe:
+    attack-damage: 11.5              # Significantly higher burst damage than diamond axe (9.0)
+    attack-speed: -3.3               # Slower attack cooldown (vanilla diamond axe is -3.0)
+    shield-disable-seconds: 9        # Vanilla axe disables shields for 5s; Potato Axe disables for 9s
+  pickaxe:
+    auto-smelt: true
+    respect-fortune: true
+    smelt-stone-to-smooth: false     # Keeps cobble->stone configurable without cluttering inventory
+  hoe:
+    bonus-potatoes-min: 1
+    bonus-potatoes-max: 3
+    bonus-drop-chance: 0.75          # 75% chance for bonus potato drops on mature harvest
+    auto-replant: true
+    golden-potato-bonus-multiplier: 2.0
+  potato-heart:
+    max-upgrades: 8                  # Default 8 uses = +4 full hearts (+8.0 HP)
+    health-per-use: 1.0              # 1.0 HP = half a heart per Potato Heart
+  spud-seeker:
+    reveal-radius-blocks: 50.0       # Exact 50-block Locator Bar radius when helmet is equipped
+    baseline-receive-range: 0.0      # Players without The Spud Seeker cannot see others on Locator Bar
+
+golden-potatoes:
+  # Base chance (0.015 = 1.5%) to drop a Golden Potato when harvesting fully grown potato crops
+  drop-chance: 0.015
+  enable-special-recipes: true
+
+bounty:
+  min-amount: 100
+  max-amount: 1000000
+  expiration-hours: 72               # Active bounties expire and refund contributors after 72 hours
+  # Anti-farming cooldown between the same killer and victim
+  anti-farm-cooldown-minutes: 60
+  max-claims-per-pair-per-day: 2
+  allow-self-bounty: false
+  prevent-contributor-claim: true    # Prevent players who funded a bounty from killing the target to reclaim it
+  broadcast-on-place: true
+  broadcast-on-claim: true
+  quick-amounts: [250, 500, 1000, 2500, 5000, 10000]
+
+netherite:
+  # Policy for existing Netherite gear/tools/weapons:
+  # BLOCK_USE   - Keep items safe in storage, block equipping, tool mining, and weapon combat (Default)
+  # CONFISCATE  - Remove Netherite gear on equip/use attempt
+  # CONVERT     - Downgrade Netherite gear into Diamond equivalent on equip/use attempt
+  # RECIPES_ONLY - Only disable crafting/smithing recipes
+  restriction-mode: "BLOCK_USE"
+  block-crafting: true
+  block-smithing-upgrades: true
+  hide-recipes-from-book: true
+  # Block crafting/using Netherite blocks & scraps as well? Keeping scraps/debris non-craftable into gear
+  block-netherite-ingot-craft: true
+
+trading:
+  request-timeout-seconds: 45
+  confirm-countdown-seconds: 3
+  max-distance-blocks: -1            # -1 allows server-wide trading via /trade; set positive value for proximity
+
+weekly-competition:
+  duration-days: 7
+  # Reward payout tiers (top 3 weekly potato depositors)
+  rewards:
+    1:
+      credits: 15000
+      golden-potatoes: 16
+    2:
+      credits: 7500
+      golden-potatoes: 8
+    3:
+      credits: 3500
+      golden-potatoes: 4
+
+monument:
+  location:
+    world: "world"
+    x: 0.5
+    y: 66.0
+    z: 8.5
+    configured: false
+  milestones:
+    m1:
+      potatoes: 10000
+      title: "Sprouting Village"
+      reward-credits-online: 250
+      haste-duration-minutes: 15
+    m2:
+      potatoes: 50000
+      title: "Golden Harvest"
+      reward-credits-online: 750
+      haste-duration-minutes: 30
+    m3:
+      potatoes: 150000
+      title: "Grand Spud Citadel"
+      reward-credits-online: 2000
+      haste-duration-minutes: 45
+    m4:
+      potatoes: 500000
+      title: "Eternal Potato Empire"
+      reward-credits-online: 5000
+      haste-duration-minutes: 60
+
+gui:
+  filler-material: "BROWN_STAINED_GLASS_PANE"
+  accent-material: "YELLOW_STAINED_GLASS_PANE"
+  scoreboard-refresh-seconds: 5
